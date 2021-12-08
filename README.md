@@ -1,4 +1,37 @@
-# cucumber-playwright
+# Personal notes
+
+## Steps to reproduce the tests
+
+- Clone the repo
+- On the repo folder execute the following commands to execute the tests
+
+### Multi browser Headless
+
+FIREFOX:
+`BROWSER=firefox npm run test features/jscrambler.feature`
+WEBKIT:
+`BROWSER=webkit npm run test features/jscrambler.feature`
+CHROME (default browser):
+`npm run test features/jscrambler.feature`
+
+### Multi browser Debug (with GUI) - execute command and click play for each scenario
+
+FIREFOX:
+`BROWSER=firefox npm run debug test features/jscrambler.feature`
+WEBKIT:
+`BROWSER=webkit npm run debug test features/jscrambler.feature`
+CHROME (default browser):
+`npm run debug test features/jscrambler.feature`
+
+### In case there is an error please validate if all extra dependencies are installed
+
+- In case of error “Cannot find module 'ts-node/register’”
+  `npm install ts-node --save-dev`
+
+- In case of error related to randomstring
+  `npm install --save @types/randomstring`
+
+# cucumber-playwright (Template repo)
 
 ![Test](https://github.com/Tallyb/cucumber-playwright/workflows/Test/badge.svg)
 
@@ -45,7 +78,7 @@ npm run test
 
 ## Working with Page Objects
 
-I am not fond of the Page Object Model (POM) for testing. It feels like a leftover from Java world, and I do not think it fits the Javascript world. However, you can check [this PR](https://github.com/Tallyb/cucumber-playwright/pull/95/files) to see POM implementation. 
+I am not fond of the Page Object Model (POM) for testing. It feels like a leftover from Java world, and I do not think it fits the Javascript world. However, you can check [this PR](https://github.com/Tallyb/cucumber-playwright/pull/95/files) to see POM implementation.
 
 ## Debugging Features
 
