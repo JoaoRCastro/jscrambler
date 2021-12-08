@@ -7,20 +7,24 @@
 
 ### Multi browser Headless
 
-FIREFOX:
+- FIREFOX:
 `BROWSER=firefox npm run test features/jscrambler.feature`
-WEBKIT:
+
+- WEBKIT:
 `BROWSER=webkit npm run test features/jscrambler.feature`
-CHROME (default browser):
+
+- CHROME (default browser):
 `npm run test features/jscrambler.feature`
 
 ### Multi browser Debug (with GUI) - execute command and click play for each scenario
 
-FIREFOX:
+- FIREFOX:
 `BROWSER=firefox npm run debug test features/jscrambler.feature`
-WEBKIT:
+
+- WEBKIT:
 `BROWSER=webkit npm run debug test features/jscrambler.feature`
-CHROME (default browser):
+
+- CHROME (default browser):
 `npm run debug test features/jscrambler.feature`
 
 ### In case there is an error please validate if all extra dependencies are installed
